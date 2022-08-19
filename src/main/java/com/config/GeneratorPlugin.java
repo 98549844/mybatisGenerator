@@ -7,7 +7,6 @@ import org.mybatis.generator.api.IntrospectedTable;
 import org.mybatis.generator.api.PluginAdapter;
 import org.mybatis.generator.api.dom.java.*;
 
-import javax.persistence.EmbeddedId;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -39,10 +38,26 @@ public class GeneratorPlugin extends PluginAdapter {
 
 
         /*
-        log.info("generate EmbeddedId");
+        log.info("generating EmbeddedId and getter/setter");
         Field keyField = new Field("key", new FullyQualifiedJavaType("com.models.RFncFunctionKey"));
         keyField.setVisibility(JavaVisibility.PRIVATE);
         topLevelClass.addField(keyField);
+        Method getMethod = new Method("getKey");
+        Method setMethod = new Method("setKey");
+        getMethod.setVisibility(JavaVisibility.PRIVATE);
+        getMethod.setReturnType(new FullyQualifiedJavaType("com.models.RFncFunctionKey"));
+        getMethod.addBodyLine("return key ;");
+
+        setMethod.setVisibility(JavaVisibility.PRIVATE);
+        setMethod.setReturnType(new FullyQualifiedJavaType("void"));
+        setMethod.addBodyLine("this.key = key;");
+
+        Parameter p = new Parameter(new FullyQualifiedJavaType("com.models.RFncFunctionKey"), "key", false);
+        setMethod.addParameter(p);
+
+        topLevelClass.addMethod(getMethod);
+        topLevelClass.addMethod(setMethod);
+        log.info("Complete EmbeddedId and getter/setter generation");
         */
 
 
