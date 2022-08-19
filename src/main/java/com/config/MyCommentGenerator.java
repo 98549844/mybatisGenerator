@@ -1,4 +1,4 @@
-package com.ilovey.mybatis.comment;
+package com.config;
 
 
 import org.mybatis.generator.api.IntrospectedColumn;
@@ -13,6 +13,7 @@ import java.util.Date;
 import java.util.Properties;
 
 /**
+ * 暂时不需要用
  * mybatis generator生成注释插件
  */
 public class MyCommentGenerator extends DefaultCommentGenerator {
