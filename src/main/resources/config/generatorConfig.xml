@@ -12,7 +12,7 @@
         <property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
         <plugin type="com.config.GeneratorPlugin">
-            <property name="author" value="MPDA"/>
+            <property name="author" value="KALAM"/>
             <property name="dateFormat" value="yyyy/MM/dd HH:mm"/>
         </plugin>
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
